@@ -12,8 +12,13 @@ npm install -g ts-node
 
 # tslib as a help for typescript for compiling, and types/node defines types for Node
 npm install -D tslib @types/node
+
+# tsconfig.ts generate
+tsc --init
 ~~~
 ## Referencias
 * [challenge-at](https://roadmap.sh/projects/task-tracker)
 * [handbook-typescript](https://www.typescriptlang.org/docs/handbook/intro.html)
 * [ts-node](https://www.npmjs.com/package/ts-node)
+* [file-system](https://nodejs.org/api/fs.html#file-system)
+* [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON)
