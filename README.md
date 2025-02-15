@@ -52,12 +52,12 @@ npm start task-cli update 2 "Go to the Grocery Shop"
 npm start task-cli delete 2
 
 # Mark as a in-progress a task and list
-npm start mark-in-progress 1
-npm start list in-progress
+npm start task-cli mark-in-progress 1
+npm start task-cli list in-progress
 
 # Mark as done a task and list
 npm start task-cli mark-done 1
-npm start list done
+npm start task-cli list done
 ~~~
 
 ## Referencias
