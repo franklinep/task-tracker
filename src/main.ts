@@ -21,6 +21,9 @@ async function main(args: string[]): Promise<void> {
     switch (arg1) {
       case "add":
         try {
+          if (!args[2]) { 
+            throw new Error("Must type a description.");
+          }
           let new_task = my_taskhandler.createTask(args[2]);
           my_taskhandler.addTask(new_task);
           await writeFile(fileName, JSON.stringify(existingTasks, null, 2));
