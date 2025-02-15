@@ -24,8 +24,7 @@ tsc --init
 npm i
 
 # start and test
-npm start task-cli <args[]>
-
+npm start
 args[]
 * add "<description>" : Add a new task
 * update <id> "<new_description>": Update a task
@@ -40,25 +39,26 @@ args[]
 ~~~
 ### Example
 ~~~
+npm start
 # add some examples
-npm start task-cli add "Take the TOEFL EXAM"
-npm start task-cli add "Go to the"
-npm start task-cli add "If you read this, thanks for your interest"
+task-cli add "Take the TOEFL EXAM"
+task-cli add "Go to the"
+task-cli add "If you read this, thanks for your interest"
 
 # list todo tasks (status: todo)
-npm start task-cli list
+task-cli list
 
 # update and delete a task
-npm start task-cli update 2 "Go to the Grocery Shop"
-npm start task-cli delete 2
+task-cli update 2 "Go to the Grocery Shop"
+task-cli delete 2
 
 # Mark as a in-progress a task and list
-npm start task-cli mark-in-progress 1
-npm start task-cli list in-progress
+task-cli mark-in-progress 1
+task-cli list in-progress
 
 # Mark as done a task and list
-npm start task-cli mark-done 1
-npm start task-cli list done
+task-cli mark-done 1
+task-cli list done
 ~~~
 
 ## Referencias
