@@ -17,7 +17,7 @@ npm install -D tslib @types/node
 tsc --init
 ~~~
 
-## Wants to test? so keep this instructions
+## Do u want to test it? so keep this instructions
 ~~~
 # install the packages
 npm i
