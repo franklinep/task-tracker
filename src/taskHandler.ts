@@ -1,3 +1,4 @@
+import { get } from 'http';
 import { Task } from './task';
 export class TaskHandler {
     tasks: Task[];
@@ -5,9 +6,15 @@ export class TaskHandler {
         this.tasks = Tasks;
     }
 
+    private getNextId(): number {
+        if (this.tasks.length === 0) return 1;
+        const maxId = Math.max(...this.tasks.map(task => task.id)); // ids: [1, 5, 7] -> 7
+        return maxId + 1;
+    }
+
     createTask(description: string) {
         let task: Task = {    
-            id: this.tasks.length + 1,
+            id: this.getNextId(),
             description: description,
             status: 'todo',
             createdAt: new Date(),
